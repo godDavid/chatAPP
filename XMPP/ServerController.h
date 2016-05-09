@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "XMPPFramework.h"
+#import "XMPPRoster.h"
 #import "MBProgressHUD.h"
-@interface ServerController :UIViewController <XMPPStreamDelegate>
+@interface ServerController :NSObject<XMPPStreamDelegate,XMPPRosterDelegate>
 @property (nonatomic,strong) XMPPStream *xmppStream;
 @property (nonatomic,strong) NSString *password;
 @property (nonatomic,assign) NSInteger purpose;
 -(void) connect:(NSString*)user :(NSString *)password :(NSInteger)purpose;
 //-(void) configureStream;
 + (instancetype)shareSever;
-- (void) hudLabel:(NSString *)text :(void *(^)(void)) myBlock;
+//- (void) hudLabel:(NSString *)text :(void *(^)(void)) myBlock;
 @end

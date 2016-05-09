@@ -16,17 +16,7 @@ static NSString *PASS=@"pass1";
 @end
 
 @implementation ServerController
-- (void) hudLabel:(NSString *)text :(void *(^)(void)) myBlock{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-    hud.labelText =NSLocalizedString(text, @"HUD loading title");
-    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            myBlock();
-            [hud hide:YES afterDelay:1];
-        });
-    });
-    
-}
+
 //单例方法
 + (instancetype)shareSever{
     static ServerController *sc=nil;
