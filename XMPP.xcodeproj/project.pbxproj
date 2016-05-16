@@ -12,6 +12,7 @@
 		040AF43D1CB6A2DE00209E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AF43C1CB6A2DE00209E12 /* UIKit.framework */; };
 		040AF43F1CB6A2E900209E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AF43E1CB6A2E900209E12 /* CoreGraphics.framework */; };
 		042427DA1CAC0DA9004482BF /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042427D91CAC0DA9004482BF /* ServerController.m */; };
+		047F2F3B1CE75DEB005391B3 /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F2F3A1CE75DEB005391B3 /* CellTableViewCell.m */; };
 		04BEEE361CA410A700048CD4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE351CA410A700048CD4 /* LoginViewController.m */; };
 		04BEEE391CA410C100048CD4 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE381CA410C100048CD4 /* RegViewController.m */; };
 		04BEEE3C1CA413C400048CD4 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE3B1CA413C400048CD4 /* UserViewController.m */; };
@@ -24,7 +25,6 @@
 		04D28E811C9AF9EF008E942B /* XMPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E801C9AF9EF008E942B /* XMPPTests.m */; };
 		04D28E8C1C9AF9EF008E942B /* XMPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E8B1C9AF9EF008E942B /* XMPPUITests.m */; };
 		04D2EFF91CDF107200D224E5 /* HudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2EFF81CDF107200D224E5 /* HudViewController.m */; };
-		04D2EFFC1CE0AC4100D224E5 /* RosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2EFFB1CE0AC4100D224E5 /* RosterController.m */; };
 		24784FF0C9508CFBA4E497C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1911811E58C67FA214A709 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,8 @@
 		040AF43E1CB6A2E900209E12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		042427D81CAC0DA9004482BF /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerController.h; path = ../../../Desktop/XMPP/XMPP/ServerController.h; sourceTree = "<group>"; };
 		042427D91CAC0DA9004482BF /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerController.m; path = ../../../Desktop/XMPP/XMPP/ServerController.m; sourceTree = "<group>"; };
+		047F2F391CE75DEB005391B3 /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
+		047F2F3A1CE75DEB005391B3 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
 		04BEEE341CA410A700048CD4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../../../Desktop/XMPP/XMPP/LoginViewController.h; sourceTree = "<group>"; };
 		04BEEE351CA410A700048CD4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../../../Desktop/XMPP/XMPP/LoginViewController.m; sourceTree = "<group>"; };
 		04BEEE371CA410C100048CD4 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegViewController.h; path = ../../../Desktop/XMPP/XMPP/RegViewController.h; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		04D28E8D1C9AF9EF008E942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D2EFF71CDF107200D224E5 /* HudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HudViewController.h; path = ../../../Desktop/XMPP/XMPP/HudViewController.h; sourceTree = "<group>"; };
 		04D2EFF81CDF107200D224E5 /* HudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HudViewController.m; path = ../../../Desktop/XMPP/XMPP/HudViewController.m; sourceTree = "<group>"; };
-		04D2EFFA1CE0AC4100D224E5 /* RosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RosterController.h; path = ../../../Desktop/XMPP/XMPP/RosterController.h; sourceTree = "<group>"; };
-		04D2EFFB1CE0AC4100D224E5 /* RosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RosterController.m; path = ../../../Desktop/XMPP/XMPP/RosterController.m; sourceTree = "<group>"; };
 		4C1911811E58C67FA214A709 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFFEEBA32B5F9AA63D8C5D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B10BD24479080E2E511015D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,13 +139,13 @@
 			isa = PBXGroup;
 			children = (
 				04D28E661C9AF9EF008E942B /* AppDelegate.h */,
+				047F2F391CE75DEB005391B3 /* CellTableViewCell.h */,
+				047F2F3A1CE75DEB005391B3 /* CellTableViewCell.m */,
 				04D28E671C9AF9EF008E942B /* AppDelegate.m */,
 				04D2EFF71CDF107200D224E5 /* HudViewController.h */,
 				04D2EFF81CDF107200D224E5 /* HudViewController.m */,
 				042427D81CAC0DA9004482BF /* ServerController.h */,
 				042427D91CAC0DA9004482BF /* ServerController.m */,
-				04D2EFFA1CE0AC4100D224E5 /* RosterController.h */,
-				04D2EFFB1CE0AC4100D224E5 /* RosterController.m */,
 				04BEEE341CA410A700048CD4 /* LoginViewController.h */,
 				04BEEE351CA410A700048CD4 /* LoginViewController.m */,
 				04BEEE371CA410C100048CD4 /* RegViewController.h */,
@@ -401,8 +401,8 @@
 				04BEEE3C1CA413C400048CD4 /* UserViewController.m in Sources */,
 				04BEEE391CA410C100048CD4 /* RegViewController.m in Sources */,
 				0408028F1CA5755B00C7BFDD /* ChatViewController.m in Sources */,
-				04D2EFFC1CE0AC4100D224E5 /* RosterController.m in Sources */,
 				04D28E651C9AF9EF008E942B /* main.m in Sources */,
+				047F2F3B1CE75DEB005391B3 /* CellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

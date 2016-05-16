@@ -6,43 +6,257 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17A858F257A28AE2F3DEB2E2D098F51B /* UIBubbleHeaderTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AE73DD9606D2E2B123F1DBE43681D886 /* UIBubbleHeaderTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B51B80EA5A75C853B9244442973B486 /* UIBubbleTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E23E7AF27F4C26AEF2AAED6360EB88F /* UIBubbleTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BDCC3EC00FE5C7DBE9BB4D6907F7CE7 /* UIBubbleTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5A09F5B41666C103CE34016CDFDC6 /* UIBubbleTableView-dummy.m */; };
+		55354849B7281EE29C78E6FE93409A2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5DBC40E0EB2351E1407264E50DFA99E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5FFEC5CF3DC953EAE522AAFD78F3B01F /* UIBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B36DF8C6297EAF1FE443839CDCF52D /* UIBubbleTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6013024FDDBFADA448F2A70A00066F88 /* UIBubbleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065DDD71AAEB40BB74EB5E88A7E6E46B /* UIBubbleTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		961601BD412D95980249834246A02535 /* UIBubbleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CE74C497C19ED1B68441D3A3D6438E /* UIBubbleTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B628B7F205CEB366681C4130C5DF46 /* UIBubbleTypingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044A6C9967D4BBC78F7D66D99E24FA4B /* UIBubbleTypingTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B1CCB2EBA4EE964ED80C2E3B5CBE9818 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		B7EDA619F3ED435787BBA257BA84F25C /* UIBubbleHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C16102D27DC4F73A58A57366DFA932 /* UIBubbleHeaderTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D201803944718F24D5648E120EDDAAE3 /* NSBubbleData.h in Headers */ = {isa = PBXBuildFile; fileRef = 317527C85E82B169FA3804465255CCE6 /* NSBubbleData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D579F755D1485E92330D924FFC0096EE /* UIBubbleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9617637D90297C1DBD52A4C08A96CE7D /* UIBubbleTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA095A1447C22C11B853427CC2A76976 /* NSBubbleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B709149FF881FE8D3DFDF0A09758104 /* NSBubbleData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8EC8F467D027B90D8669A7D32C4B468 /* UIBubbleTypingTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5B92E5F958DF9D3BEA58FBD5125F6A /* UIBubbleTypingTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF039C7B83ACC9DEF7E52DFAE2F1B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9174B9B53C6E8CD6E35A3255A69DCCB;
+			remoteInfo = UIBubbleTableView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		044A6C9967D4BBC78F7D66D99E24FA4B /* UIBubbleTypingTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBubbleTypingTableViewCell.m; path = src/UIBubbleTypingTableViewCell.m; sourceTree = "<group>"; };
+		065DDD71AAEB40BB74EB5E88A7E6E46B /* UIBubbleTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBubbleTableView.m; path = src/UIBubbleTableView.m; sourceTree = "<group>"; };
+		07BB1C661CC0C8B4490BB4A2F2F40AAE /* UIBubbleTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIBubbleTableView.xcconfig; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		12E5A09F5B41666C103CE34016CDFDC6 /* UIBubbleTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBubbleTableView-dummy.m"; sourceTree = "<group>"; };
+		16C16102D27DC4F73A58A57366DFA932 /* UIBubbleHeaderTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBubbleHeaderTableViewCell.m; path = src/UIBubbleHeaderTableViewCell.m; sourceTree = "<group>"; };
+		21E41A0838BE00AC87D83889DDF3B8C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B36DF8C6297EAF1FE443839CDCF52D /* UIBubbleTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBubbleTableViewCell.m; path = src/UIBubbleTableViewCell.m; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		2B709149FF881FE8D3DFDF0A09758104 /* NSBubbleData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSBubbleData.m; path = src/NSBubbleData.m; sourceTree = "<group>"; };
+		317527C85E82B169FA3804465255CCE6 /* NSBubbleData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSBubbleData.h; path = src/NSBubbleData.h; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E23E7AF27F4C26AEF2AAED6360EB88F /* UIBubbleTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBubbleTableViewDataSource.h; path = src/UIBubbleTableViewDataSource.h; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46CE74C497C19ED1B68441D3A3D6438E /* UIBubbleTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBubbleTableViewCell.h; path = src/UIBubbleTableViewCell.h; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		50D9196F05734C4ECBC162842BF4722A /* typingMine.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = typingMine.png; path = images/typingMine.png; sourceTree = "<group>"; };
+		513A6171BF02F4215B9A42433BE96898 /* bubbleMine.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = bubbleMine.png; path = images/bubbleMine.png; sourceTree = "<group>"; };
+		6065FADD6A1FFFF09E4662019C781D96 /* libUIBubbleTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIBubbleTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		72DAE390B8A18B38F36D75A9B35C8A1D /* typingMine@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "typingMine@2x.png"; path = "images/typingMine@2x.png"; sourceTree = "<group>"; };
+		7B6FC5A86269129427E76B58131C509F /* UIBubbleTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBubbleTableView-prefix.pch"; sourceTree = "<group>"; };
+		7E5B92E5F958DF9D3BEA58FBD5125F6A /* UIBubbleTypingTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBubbleTypingTableViewCell.h; path = src/UIBubbleTypingTableViewCell.h; sourceTree = "<group>"; };
+		8072BC7205C900372DC7F9514429D0F3 /* typingSomeone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = typingSomeone.png; path = images/typingSomeone.png; sourceTree = "<group>"; };
+		9617637D90297C1DBD52A4C08A96CE7D /* UIBubbleTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBubbleTableView.h; path = src/UIBubbleTableView.h; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		AD76D10045C7A93CE0B46A1BFF5CE0D2 /* typingSomeone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "typingSomeone@2x.png"; path = "images/typingSomeone@2x.png"; sourceTree = "<group>"; };
+		AE73DD9606D2E2B123F1DBE43681D886 /* UIBubbleHeaderTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBubbleHeaderTableViewCell.h; path = src/UIBubbleHeaderTableViewCell.h; sourceTree = "<group>"; };
+		B5213181D1F19B97B91B393901CBBCAF /* bubbleSomeone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubbleSomeone@2x.png"; path = "images/bubbleSomeone@2x.png"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D559167936BAAD639EC5FB8D5C3EED75 /* bubbleMine@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubbleMine@2x.png"; path = "images/bubbleMine@2x.png"; sourceTree = "<group>"; };
+		FC7AE91C4B01C26578F2E7FECDA3F5E4 /* bubbleSomeone.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = bubbleSomeone.png; path = images/bubbleSomeone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		80C21265BED08E8D02F676A8ED0C4E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBC40E0EB2351E1407264E50DFA99E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B0F7F334A5AE28809E77B73D045D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55354849B7281EE29C78E6FE93409A2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		79B9FEAF5227E731D155207733CFFF62 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				DD53EB3C69C6092678C0BDB47AF8C882 /* UIBubbleTableView */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				79B9FEAF5227E731D155207733CFFF62 /* Pods */,
+				FF100A4C32DFFD02538C7EA442F41DF3 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C849F7B8C4685030AD8EF343541CDC35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				513A6171BF02F4215B9A42433BE96898 /* bubbleMine.png */,
+				D559167936BAAD639EC5FB8D5C3EED75 /* bubbleMine@2x.png */,
+				FC7AE91C4B01C26578F2E7FECDA3F5E4 /* bubbleSomeone.png */,
+				B5213181D1F19B97B91B393901CBBCAF /* bubbleSomeone@2x.png */,
+				50D9196F05734C4ECBC162842BF4722A /* typingMine.png */,
+				72DAE390B8A18B38F36D75A9B35C8A1D /* typingMine@2x.png */,
+				8072BC7205C900372DC7F9514429D0F3 /* typingSomeone.png */,
+				AD76D10045C7A93CE0B46A1BFF5CE0D2 /* typingSomeone@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD53EB3C69C6092678C0BDB47AF8C882 /* UIBubbleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				317527C85E82B169FA3804465255CCE6 /* NSBubbleData.h */,
+				2B709149FF881FE8D3DFDF0A09758104 /* NSBubbleData.m */,
+				AE73DD9606D2E2B123F1DBE43681D886 /* UIBubbleHeaderTableViewCell.h */,
+				16C16102D27DC4F73A58A57366DFA932 /* UIBubbleHeaderTableViewCell.m */,
+				9617637D90297C1DBD52A4C08A96CE7D /* UIBubbleTableView.h */,
+				065DDD71AAEB40BB74EB5E88A7E6E46B /* UIBubbleTableView.m */,
+				46CE74C497C19ED1B68441D3A3D6438E /* UIBubbleTableViewCell.h */,
+				26B36DF8C6297EAF1FE443839CDCF52D /* UIBubbleTableViewCell.m */,
+				3E23E7AF27F4C26AEF2AAED6360EB88F /* UIBubbleTableViewDataSource.h */,
+				7E5B92E5F958DF9D3BEA58FBD5125F6A /* UIBubbleTypingTableViewCell.h */,
+				044A6C9967D4BBC78F7D66D99E24FA4B /* UIBubbleTypingTableViewCell.m */,
+				C849F7B8C4685030AD8EF343541CDC35 /* Resources */,
+				F93060F5DF559534A68075D24ACD37ED /* Support Files */,
+			);
+			path = UIBubbleTableView;
+			sourceTree = "<group>";
+		};
+		F93060F5DF559534A68075D24ACD37ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07BB1C661CC0C8B4490BB4A2F2F40AAE /* UIBubbleTableView.xcconfig */,
+				12E5A09F5B41666C103CE34016CDFDC6 /* UIBubbleTableView-dummy.m */,
+				7B6FC5A86269129427E76B58131C509F /* UIBubbleTableView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIBubbleTableView";
+			sourceTree = "<group>";
+		};
+		FF100A4C32DFFD02538C7EA442F41DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21E41A0838BE00AC87D83889DDF3B8C2 /* libPods.a */,
+				6065FADD6A1FFFF09E4662019C781D96 /* libUIBubbleTableView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B344FC8C0C3AE5B482FBF828E752681 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D201803944718F24D5648E120EDDAAE3 /* NSBubbleData.h in Headers */,
+				17A858F257A28AE2F3DEB2E2D098F51B /* UIBubbleHeaderTableViewCell.h in Headers */,
+				D579F755D1485E92330D924FFC0096EE /* UIBubbleTableView.h in Headers */,
+				961601BD412D95980249834246A02535 /* UIBubbleTableViewCell.h in Headers */,
+				2B51B80EA5A75C853B9244442973B486 /* UIBubbleTableViewDataSource.h in Headers */,
+				F8EC8F467D027B90D8669A7D32C4B468 /* UIBubbleTypingTableViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9174B9B53C6E8CD6E35A3255A69DCCB /* UIBubbleTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F9C23E0441FC6D88FA29FE010F83B6 /* Build configuration list for PBXNativeTarget "UIBubbleTableView" */;
+			buildPhases = (
+				3036393E1CEC859E6212D3E59AF5A1D0 /* Sources */,
+				80C21265BED08E8D02F676A8ED0C4E3D /* Frameworks */,
+				9B344FC8C0C3AE5B482FBF828E752681 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIBubbleTableView;
+			productName = UIBubbleTableView;
+			productReference = 6065FADD6A1FFFF09E4662019C781D96 /* libUIBubbleTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BA8755D8712AFEFB43FA35D0DDBC9B44 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFCD614155ECE9D8344B9AC793B8A0C /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				5D7EB5E90ABDB11EA2C56D7F8B0519BF /* Sources */,
+				94B0F7F334A5AE28809E77B73D045D39 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53ACD1F4BA7AD0505803E2481EB53BDA /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 21E41A0838BE00AC87D83889DDF3B8C2 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,15 +273,85 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = FF100A4C32DFFD02538C7EA442F41DF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BA8755D8712AFEFB43FA35D0DDBC9B44 /* Pods */,
+				A9174B9B53C6E8CD6E35A3255A69DCCB /* UIBubbleTableView */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		3036393E1CEC859E6212D3E59AF5A1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA095A1447C22C11B853427CC2A76976 /* NSBubbleData.m in Sources */,
+				B7EDA619F3ED435787BBA257BA84F25C /* UIBubbleHeaderTableViewCell.m in Sources */,
+				4BDCC3EC00FE5C7DBE9BB4D6907F7CE7 /* UIBubbleTableView-dummy.m in Sources */,
+				6013024FDDBFADA448F2A70A00066F88 /* UIBubbleTableView.m in Sources */,
+				5FFEC5CF3DC953EAE522AAFD78F3B01F /* UIBubbleTableViewCell.m in Sources */,
+				A1B628B7F205CEB366681C4130C5DF46 /* UIBubbleTypingTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7EB5E90ABDB11EA2C56D7F8B0519BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CCB2EBA4EE964ED80C2E3B5CBE9818 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53ACD1F4BA7AD0505803E2481EB53BDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIBubbleTableView;
+			target = A9174B9B53C6E8CD6E35A3255A69DCCB /* UIBubbleTableView */;
+			targetProxy = DF039C7B83ACC9DEF7E52DFAE2F1B5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		75674043C36083CE183EE2078B0B028B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BB1C661CC0C8B4490BB4A2F2F40AAE /* UIBubbleTableView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIBubbleTableView/UIBubbleTableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2AE7A0DDF1DCA949221A9B24B69007E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -107,6 +391,41 @@
 			};
 			name = Debug;
 		};
+		C64EB455DED548713EACBB375504492D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E1BD225B4528E8CEB299080B30868898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BB1C661CC0C8B4490BB4A2F2F40AAE /* UIBubbleTableView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIBubbleTableView/UIBubbleTableView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -144,11 +463,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27F9C23E0441FC6D88FA29FE010F83B6 /* Build configuration list for PBXNativeTarget "UIBubbleTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75674043C36083CE183EE2078B0B028B /* Debug */,
+				E1BD225B4528E8CEB299080B30868898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
 				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFCD614155ECE9D8344B9AC793B8A0C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64EB455DED548713EACBB375504492D /* Debug */,
+				A2AE7A0DDF1DCA949221A9B24B69007E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

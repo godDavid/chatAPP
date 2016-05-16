@@ -7,7 +7,7 @@
 //
 
 #import "ServerController.h"
-//#import "UIKit.h"
+#import "XMPPMessageArchivingCoreDataStorage.h"
 static NSString *USER=@"user1";
 static NSString *PASS=@"pass1";
 @interface ServerController ()
@@ -26,22 +26,51 @@ static NSString *PASS=@"pass1";
     });
     return sc;
 }
-
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+        self.xmppStream = [[XMPPStream alloc]init];
+        [self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        XMPPRosterCoreDataStorage *rosterCoreDataStorage = [XMPPRosterCoreDataStorage sharedInstance];
+        self.xmppRoster = [[XMPPRoster alloc]initWithRosterStorage:rosterCoreDataStorage dispatchQueue:dispatch_get_main_queue()];
+        //激活
+        [self.xmppRoster activate:self.xmppStream];
+        [self.xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        // 初始化聊天记录管理对象
+        XMPPMessageArchivingCoreDataStorage * archiving = [XMPPMessageArchivingCoreDataStorage sharedInstance];
+        self.messageArchiving = [[XMPPMessageArchiving alloc] initWithMessageArchivingStorage:archiving dispatchQueue:dispatch_get_main_queue()];
+        // 激活管理对象
+        [self.messageArchiving activate:self.xmppStream];
+        // 给管理对象添加代理
+        
+        [self.messageArchiving addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        
+        self.messageContext = archiving.mainThreadManagedObjectContext;
+        
+        //3.保存聊天记录
+        //初始化一个仓库
+       
+        
+   
+    }
+    return self;
+}
 -(void) connect:(NSString *)user :(NSString *)password :(NSInteger)purpose{
     //创建XMPP Stream
-    self.xmppStream = [[XMPPStream alloc] init];
+    //self.xmppStream = [[XMPPStream alloc] init];
     //设置服务器地址，如果没有设置，则通过JID获取服务器地址
     
     //设置代理，多播代理（可以设置多个代理对象）
-    [self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+    //[self.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     self.password=password;
     self.purpose=purpose;
     
-    if(![self.xmppStream isConnected]){
+    if([self.xmppStream isConnected]){
+        [self.xmppStream disconnect];
+    }
     XMPPJID *jid = [XMPPJID jidWithUser:user domain:@"127.0.0.1" resource:@"openfire1"];
     [self.xmppStream setMyJID:jid];
     [self.xmppStream setHostName:@"127.0.0.1"];
-    }
     NSError *error = nil;
     [self.xmppStream connectWithTimeout:XMPPStreamTimeoutNone error:&error];
     //NSError *error = nil;
@@ -121,9 +150,27 @@ static NSString *PASS=@"pass1";
     // Pass the selected object to the new view controller.
 }
 */
+//#pragma mark 开始检索好友列表的方法
+//-(void)xmppRosterDidBeginPopulating:(XMPPRoster *)sender{
+//    NSLog(@"开始检索好友列表");
+//}
+//-(void)xmppRoster:(XMPPRoster *)sender didReceiveRosterItem:(DDXMLElement *)item{
+//    NSLog(@"检索好友列表");
+//}
+//-(void)xmppRosterDidEndPopulating:(XMPPRoster *)sender{
+//    NSLog(@"结束检索好友列表");
+//}
+- (void) XMPPAddFriendSubscribe:(NSString *)name{
+    XMPPJID *jid = [XMPPJID jidWithString:[NSString stringWithFormat:@"%@@%s",name,"127.0.0.1"]];
+    //[presence addAttributeWithName:@"subscription" stringValue:@"好友"];
+    [self.xmppRoster subscribePresenceToUser:jid];
+}
 - (void) logout{
+    XMPPPresence *presence = [XMPPPresence presenceWithType:@"unavailable"];
+    [self.xmppStream sendElement:presence];
     //注销
     [self.xmppStream disconnect];
+    NSLog(@"用户注销%@",presence);
 }
 
 @end

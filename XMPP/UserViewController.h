@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UserViewController : UIViewController
+//@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *rosterJids;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

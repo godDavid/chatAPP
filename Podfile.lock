@@ -1,1 +1,10 @@
+PODS:
+  - UIBubbleTableView (0.2)
+
+DEPENDENCIES:
+  - UIBubbleTableView (~> 0.2)
+
+SPEC CHECKSUMS:
+  UIBubbleTableView: 4d0be4e527938b01ed98fa6b1f35c04667deea01
+
 COCOAPODS: 0.39.0

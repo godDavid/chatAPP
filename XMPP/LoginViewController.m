@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "XMPPFramework.h"
 #import "ServerController.h"
+#import "UserViewController.h"
 #import "HudViewController.h"
 #import "MBProgressHUD.h"
 static NSString *USER=@"user";
@@ -22,6 +23,7 @@ static NSString *PASS=@"pass";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.pwd setSecureTextEntry:YES];
     // Do any additional setup after loading the view.
     //[[ServerController shareSever].xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     [self.view endEditing:YES];
@@ -84,13 +86,13 @@ static NSString *PASS=@"pass";
 }
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
     [self performSegueWithIdentifier:@"segue" sender:self]; //跳转到登录成功页面
-    
-     HudViewController *hud2=[[HudViewController alloc]init];
-     UIView *a =self.navigationController.view;
-      void  (^myBlock)(void)=^{
-          
-        };
-     [hud2  hudtext:@"登陆成功" :myBlock :a];
+    NSLog(@"now ---%@",self);
+//     HudViewController *hud2=[[HudViewController alloc]init];
+//     UIView *a =self.navigationController.view;
+//      void  (^myBlock)(void)=^{
+//          
+//        };
+//     [hud2  hudtext:@"登陆成功" :myBlock :a];
     
     
 }
