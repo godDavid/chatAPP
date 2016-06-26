@@ -1,0 +1,47 @@
+- (NSInteger)numberOfSectionsInTableView:(UIBubbleTableView *)tableView {
+return 1;
+}
+
+
+- (NSInteger)tableView:(UIBubbleTableView *)tableView numberOfRowsInSection:(NSInteger)section {
+return self.messageArray.count;
+//    NSLog(@"%lu",self.messageArray.count);
+}
+
+
+
+
+- (UIBubbleTableViewCell *)tableView:(UIBubbleTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+UIBubbleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chatcell" forIndexPath:indexPath];
+
+XMPPMessageArchiving_Message_CoreDataObject *message = self.messageArray[indexPath.row];
+
+
+if (message.isOutgoing == YES) {
+//NSDate *date=[NSDate date];
+NSLog(@"i say:%@",message.body);
+NSLog(@"at time:%@",message.timestamp);
+//cell.detailTextLabel.text = @"";
+NSBubbleData *sendMessage= [NSBubbleData dataWithText:message.body date:message.timestamp type:BubbleTypeMine];
+
+cell.data = sendMessage;
+return cell;
+
+//[self.messageArray addObject:sendMessage];
+//self.tableView.bubbleDataSource = self;
+
+
+
+} else {
+//cell= [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+//cell.textLabel.text = message.body;
+NSLog(@"u say:%@",message.body);
+NSLog(@"at time:%@",message.timestamp);
+NSBubbleData *recieveMessage= [NSBubbleData dataWithText:message.body date:[NSDate dateWithTimeIntervalSince1970:0] type:BubbleTypeSomeoneElse];
+//cell.detailTextLabel.text = @"";
+cell.data=recieveMessage;
+return cell;
+}
+
+
+}

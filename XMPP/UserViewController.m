@@ -21,15 +21,14 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"吱吱"]];
     self.rosterJids = [[NSMutableArray alloc]init];
     ServerController *conn=[ServerController shareSever];
     [conn.xmppRoster addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    
     // Do any additional setup after loading the view.
      UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     backBtn.frame = CGRectMake(0, 0, 30, 30);
-    [backBtn setTitle:@"注销" forState:UIControlStateNormal];
+    [backBtn setTitle:@"11111" forState:UIControlStateNormal];
     [backBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(logout) forControlEvents:UIControlEventTouchUpInside];
      UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
@@ -59,7 +58,7 @@
     XMPPJID *jid=self.rosterJids[indexPath.row];
     
     cell.textLabel.text = jid.user;
-    NSLog(@"12345%@",jid.domain);
+    //NSLog(@"12345%@",jid.domain);
     return cell;
 }
 -(void)xmppRosterDidBeginPopulating:(XMPPRoster *)sender{
@@ -67,8 +66,11 @@
 }
 -(void)xmppRoster:(XMPPRoster *)sender didReceiveRosterItem:(NSXMLElement *)item{
     NSLog(@"检索好友列表");
+    
     NSLog(@"%@",item);
+    //NSString *groupString = [self encodeWithCoder:
     NSString *jidString = [[item attributeForName:@"jid"] stringValue];
+    NSString *groupString = [[item attributeForName:@"group"] stringValue];
     XMPPJID *jid = [XMPPJID jidWithUser:jidString domain:@"127.0.0.1" resource:@"openfire1"];
     // 存储到数组
     [self.rosterJids addObject:jid];
@@ -81,13 +83,7 @@
 -(void)xmppRosterDidEndPopulating:(XMPPRoster *)sender{
     NSLog(@"结束检索好友列表");
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//-(void)tableview:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"tochat" sender:self];
-    //ChatViewController *chat=[[ChatViewController alloc]init];
-    //chat.chatToJid=self.rosterJids[indexPath.row];
-    //[self.navigationController pushViewController:chat animated:YES];
-}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UITableViewCell *cell = (UITableViewCell *)sender;
     // 拿到下一步要跳转的Controller对象
@@ -95,6 +91,7 @@
     // 判断选中的cell在当前的table中的位置
     NSIndexPath *path = [self.tableView indexPathForCell:cell];
     cVC.chatToJid = self.rosterJids[path.row];
+    
 }
 
 
@@ -106,7 +103,6 @@
     XMPPPresence *presence = [XMPPPresence presenceWithType:@"unavailable"];//向服务器发送离线消息
     [[ServerController shareSever].xmppStream sendElement:presence];
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:1] animated:YES];
-    //[self performSegueWithIdentifier:@"logout" sender:self];
     [[ServerController shareSever].xmppStream disconnect];
     
 }

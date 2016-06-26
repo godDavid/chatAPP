@@ -165,12 +165,5 @@ static NSString *PASS=@"pass1";
     //[presence addAttributeWithName:@"subscription" stringValue:@"好友"];
     [self.xmppRoster subscribePresenceToUser:jid];
 }
-- (void) logout{
-    XMPPPresence *presence = [XMPPPresence presenceWithType:@"unavailable"];
-    [self.xmppStream sendElement:presence];
-    //注销
-    [self.xmppStream disconnect];
-    NSLog(@"用户注销%@",presence);
-}
 
 @end

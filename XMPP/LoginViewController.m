@@ -16,6 +16,7 @@ static NSString *USER=@"user";
 static NSString *PASS=@"pass";
 @interface LoginViewController ()<XMPPStreamDelegate>
 //@property (strong,nonatomic) XMPPStream *xmppStream;
+//@property (strong, nonatomic) IBOutlet UIView *view;
 
 @end
 
@@ -24,11 +25,23 @@ static NSString *PASS=@"pass";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.pwd setSecureTextEntry:YES];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"吱吱"]];
     // Do any additional setup after loading the view.
     //[[ServerController shareSever].xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    [self.view endEditing:YES];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHide:)];
+    //设置成NO表示当前控件响应后会传播到其他控件上，默认为YES。
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    //将触摸事件添加到当前view
+    [self.view addGestureRecognizer:tapGestureRecognizer];
 }
-
+-(void)keyboardHide:(UITapGestureRecognizer*)tap{
+    if(self.user.isFirstResponder){
+        [self.user resignFirstResponder];
+    }
+    else if(self.pwd.isFirstResponder){
+        [self.pwd resignFirstResponder];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -57,7 +70,8 @@ static NSString *PASS=@"pass";
         UIView *a =self.navigationController.view;     // 纪录当前的导航view做参数传递
         void  (^myBlock)(void)=^{        //定义block
            [conn connect:_user.text:_pwd.text:1];
-           [conn.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];};
+           [conn.xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        };
         [hud1 hudLabel:@"loading..." :myBlock :a];  //调用loadingHUD
 //        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
 //
@@ -85,6 +99,7 @@ static NSString *PASS=@"pass";
     NSLog(@"连接服务器失败，请检查网络是否正常");
 }
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
+    
     [self performSegueWithIdentifier:@"segue" sender:self]; //跳转到登录成功页面
     NSLog(@"now ---%@",self);
 //     HudViewController *hud2=[[HudViewController alloc]init];
@@ -96,7 +111,11 @@ static NSString *PASS=@"pass";
     
     
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"------prepareForSegue------");
+    UserViewController *uv=segue.destinationViewController;
+    uv.navigationItem.hidesBackButton=YES;
+}
 //- (void)xmppStream:(XMPPStream *)sender socketDidConnect:(GCDAsyncSocket *)socket{
 //    
 //}

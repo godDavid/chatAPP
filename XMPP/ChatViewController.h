@@ -14,7 +14,7 @@
 #import "NSBubbleData.h"
 @interface ChatViewController : UIViewController
 @property (strong,nonatomic) XMPPJID *chatToJid;
-@property (weak,nonatomic) IBOutlet UIBubbleTableView *tableView;
+@property (strong,nonatomic) IBOutlet UIBubbleTableView *tableView;
 @property (strong, nonatomic) IBOutlet UITextField *chatText;
 
 - (IBAction)sendAction:(id)sender;

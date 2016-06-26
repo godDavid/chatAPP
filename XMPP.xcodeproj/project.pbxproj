@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0408028F1CA5755B00C7BFDD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408028E1CA5755B00C7BFDD /* ChatViewController.m */; };
-		040AF43B1CB6A2CC00209E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AF43A1CB6A2CC00209E12 /* Foundation.framework */; };
-		040AF43D1CB6A2DE00209E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AF43C1CB6A2DE00209E12 /* UIKit.framework */; };
-		040AF43F1CB6A2E900209E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040AF43E1CB6A2E900209E12 /* CoreGraphics.framework */; };
 		042427DA1CAC0DA9004482BF /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042427D91CAC0DA9004482BF /* ServerController.m */; };
 		047F2F3B1CE75DEB005391B3 /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F2F3A1CE75DEB005391B3 /* CellTableViewCell.m */; };
+		0482CA531D1FBF920038C808 /* 吱吱app.png in Resources */ = {isa = PBXBuildFile; fileRef = 0482CA521D1FBF920038C808 /* 吱吱app.png */; };
+		0482CA551D1FBF990038C808 /* 吱吱.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0482CA541D1FBF990038C808 /* 吱吱.jpeg */; };
 		04BEEE361CA410A700048CD4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE351CA410A700048CD4 /* LoginViewController.m */; };
 		04BEEE391CA410C100048CD4 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE381CA410C100048CD4 /* RegViewController.m */; };
 		04BEEE3C1CA413C400048CD4 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BEEE3B1CA413C400048CD4 /* UserViewController.m */; };
+		04C5148E1D195B260082E1AF /* File in Resources */ = {isa = PBXBuildFile; fileRef = 04C5148D1D195B250082E1AF /* File */; };
 		04D28E651C9AF9EF008E942B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E641C9AF9EF008E942B /* main.m */; };
 		04D28E681C9AF9EF008E942B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E671C9AF9EF008E942B /* AppDelegate.m */; };
 		04D28E6B1C9AF9EF008E942B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E6A1C9AF9EF008E942B /* ViewController.m */; };
@@ -25,7 +25,7 @@
 		04D28E811C9AF9EF008E942B /* XMPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E801C9AF9EF008E942B /* XMPPTests.m */; };
 		04D28E8C1C9AF9EF008E942B /* XMPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D28E8B1C9AF9EF008E942B /* XMPPUITests.m */; };
 		04D2EFF91CDF107200D224E5 /* HudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2EFF81CDF107200D224E5 /* HudViewController.m */; };
-		24784FF0C9508CFBA4E497C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1911811E58C67FA214A709 /* libPods.a */; };
+		1E18E661C97EFE5B8557CF6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9342F2C009051C07420B2E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,19 +48,19 @@
 /* Begin PBXFileReference section */
 		0408028D1CA5755B00C7BFDD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../../../Desktop/XMPP/XMPP/ChatViewController.h; sourceTree = "<group>"; };
 		0408028E1CA5755B00C7BFDD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../../../Desktop/XMPP/XMPP/ChatViewController.m; sourceTree = "<group>"; };
-		040AF43A1CB6A2CC00209E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		040AF43C1CB6A2DE00209E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		040AF43E1CB6A2E900209E12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		042427D81CAC0DA9004482BF /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerController.h; path = ../../../Desktop/XMPP/XMPP/ServerController.h; sourceTree = "<group>"; };
 		042427D91CAC0DA9004482BF /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerController.m; path = ../../../Desktop/XMPP/XMPP/ServerController.m; sourceTree = "<group>"; };
 		047F2F391CE75DEB005391B3 /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
 		047F2F3A1CE75DEB005391B3 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
+		0482CA521D1FBF920038C808 /* 吱吱app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "吱吱app.png"; path = "../../吱吱app.png"; sourceTree = "<group>"; };
+		0482CA541D1FBF990038C808 /* 吱吱.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "吱吱.jpeg"; path = "../../吱吱.jpeg"; sourceTree = "<group>"; };
 		04BEEE341CA410A700048CD4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../../../Desktop/XMPP/XMPP/LoginViewController.h; sourceTree = "<group>"; };
 		04BEEE351CA410A700048CD4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../../../Desktop/XMPP/XMPP/LoginViewController.m; sourceTree = "<group>"; };
 		04BEEE371CA410C100048CD4 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegViewController.h; path = ../../../Desktop/XMPP/XMPP/RegViewController.h; sourceTree = "<group>"; };
 		04BEEE381CA410C100048CD4 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegViewController.m; path = ../../../Desktop/XMPP/XMPP/RegViewController.m; sourceTree = "<group>"; };
 		04BEEE3A1CA413C400048CD4 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserViewController.h; path = ../../../Desktop/XMPP/XMPP/UserViewController.h; sourceTree = "<group>"; };
 		04BEEE3B1CA413C400048CD4 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserViewController.m; path = ../../../Desktop/XMPP/XMPP/UserViewController.m; sourceTree = "<group>"; };
+		04C5148D1D195B250082E1AF /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		04D28E601C9AF9EF008E942B /* XMPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D28E641C9AF9EF008E942B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D28E661C9AF9EF008E942B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,9 +79,9 @@
 		04D28E8D1C9AF9EF008E942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D2EFF71CDF107200D224E5 /* HudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HudViewController.h; path = ../../../Desktop/XMPP/XMPP/HudViewController.h; sourceTree = "<group>"; };
 		04D2EFF81CDF107200D224E5 /* HudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HudViewController.m; path = ../../../Desktop/XMPP/XMPP/HudViewController.m; sourceTree = "<group>"; };
-		4C1911811E58C67FA214A709 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EFFEEBA32B5F9AA63D8C5D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B10BD24479080E2E511015D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		294636E119723D64A3B5C7C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ACA231F76DE87901B7BC5CE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9342F2C009051C07420B2E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040AF43F1CB6A2E900209E12 /* CoreGraphics.framework in Frameworks */,
-				040AF43D1CB6A2DE00209E12 /* UIKit.framework in Frameworks */,
-				040AF43B1CB6A2CC00209E12 /* Foundation.framework in Frameworks */,
-				24784FF0C9508CFBA4E497C3 /* libPods.a in Frameworks */,
+				1E18E661C97EFE5B8557CF6A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0482CA511D1FBF830038C808 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0482CA541D1FBF990038C808 /* 吱吱.jpeg */,
+				0482CA521D1FBF920038C808 /* 吱吱app.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		04D28E571C9AF9EF008E942B = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +126,8 @@
 				04D28E7F1C9AF9EF008E942B /* XMPPTests */,
 				04D28E8A1C9AF9EF008E942B /* XMPPUITests */,
 				04D28E611C9AF9EF008E942B /* Products */,
-				7A3EDAD013EE461CD08531C5 /* Pods */,
-				E964D242765B2FD4DE05DFA5 /* Frameworks */,
+				62D145754BDE549ED5F85453 /* Pods */,
+				D9B1311D43F9D760007412C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +158,7 @@
 				04BEEE381CA410C100048CD4 /* RegViewController.m */,
 				0408028D1CA5755B00C7BFDD /* ChatViewController.h */,
 				0408028E1CA5755B00C7BFDD /* ChatViewController.m */,
+				04C5148D1D195B250082E1AF /* File */,
 				04BEEE3A1CA413C400048CD4 /* UserViewController.h */,
 				04BEEE3B1CA413C400048CD4 /* UserViewController.m */,
 				04D28E691C9AF9EF008E942B /* ViewController.h */,
@@ -168,6 +175,7 @@
 		04D28E631C9AF9EF008E942B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0482CA511D1FBF830038C808 /* images */,
 				04D28E641C9AF9EF008E942B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -191,22 +199,19 @@
 			path = XMPPUITests;
 			sourceTree = "<group>";
 		};
-		7A3EDAD013EE461CD08531C5 /* Pods */ = {
+		62D145754BDE549ED5F85453 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4EFFEEBA32B5F9AA63D8C5D9 /* Pods.debug.xcconfig */,
-				B10BD24479080E2E511015D6 /* Pods.release.xcconfig */,
+				ACA231F76DE87901B7BC5CE1 /* Pods.debug.xcconfig */,
+				294636E119723D64A3B5C7C0 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E964D242765B2FD4DE05DFA5 /* Frameworks */ = {
+		D9B1311D43F9D760007412C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				040AF43E1CB6A2E900209E12 /* CoreGraphics.framework */,
-				040AF43C1CB6A2DE00209E12 /* UIKit.framework */,
-				040AF43A1CB6A2CC00209E12 /* Foundation.framework */,
-				4C1911811E58C67FA214A709 /* libPods.a */,
+				CC9342F2C009051C07420B2E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -318,7 +323,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C5148E1D195B260082E1AF /* File in Resources */,
 				04D28E761C9AF9EF008E942B /* LaunchScreen.storyboard in Resources */,
+				0482CA531D1FBF920038C808 /* 吱吱app.png in Resources */,
+				0482CA551D1FBF990038C808 /* 吱吱.jpeg in Resources */,
 				04D28E731C9AF9EF008E942B /* Assets.xcassets in Resources */,
 				04D28E6E1C9AF9EF008E942B /* Main.storyboard in Resources */,
 			);
@@ -353,7 +361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C617104708CA80771C7265A1 /* Copy Pods Resources */ = {
@@ -368,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF8A2C54F5C25D5D9EA1FE8B /* Check Pods Manifest.lock */ = {
@@ -541,9 +549,10 @@
 		};
 		04D28E911C9AF9EF008E942B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EFFEEBA32B5F9AA63D8C5D9 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = ACA231F76DE87901B7BC5CE1 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "吱吱";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = XMPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -557,9 +566,10 @@
 		};
 		04D28E921C9AF9EF008E942B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B10BD24479080E2E511015D6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 294636E119723D64A3B5C7C0 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "吱吱";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = XMPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

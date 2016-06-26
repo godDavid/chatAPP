@@ -15,12 +15,6 @@
 
 @implementation AppDelegate
 
--(void)logout{
-    XMPPPresence *presence = [XMPPPresence presenceWithType:@"unavailable"];//向服务器发送离线消息
-    [self.xmppStream sendElement:presence];
-    [self.xmppStream disconnect];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;

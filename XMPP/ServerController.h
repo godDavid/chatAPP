@@ -24,6 +24,6 @@
 -(void) connect:(NSString*)user :(NSString *)password :(NSInteger)purpose;
 //-(void) configureStream;
 + (instancetype)shareSever;
--(void)logout;
+//-(void)logout;
 //- (void) hudLabel:(NSString *)text :(void *(^)(void)) myBlock;
 @end
